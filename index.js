@@ -1,0 +1,1 @@
+const displayArea = $("#review-display-area");
