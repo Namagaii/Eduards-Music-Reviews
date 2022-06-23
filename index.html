@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./reset.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="./index.js"></script>
     </head>
     <body>
         <header class="header">
@@ -41,20 +40,14 @@
             <form id="review-form">
                 <label for="title">Title: </label>
                 <input type="text" id="review-title-input" name="title">
-                <div id="review-content-area">
-                    <label for="review-content-type0"></label>
-                    <select form="review-form" name="review-content-type0" id="review-content-type0">
-                        <option value="p" selected>Paragraph</option>
-                        <option value="ul">Unordered List</option>
-                        <option value="ol">Ordered List</option>
-                    </select>
-                    <label for="review-content0">Enter Paragraph Here: </label>
-                    <textarea id="review-content0" name="review-content0" rows="10" cols="10"></textarea>
-                    <!--Added fields will start here-->
+                <div class="review-content-buttons">
+                    <input class="review-content-button" type="button" id="review-content-minus-button" name="content-minus-button" value="-"><input class="review-content-button" type="button" id="review-content-plus-button" name="content-plus-button" value="+">
                 </div>
+                <div id="review-content-form-area"></div>
                 <input type="submit" value="Submit">
             </form>
         </div>
         <button id="add-review-button"></button>
+        <script src="./index.js"></script>
     </body>
 </html>
